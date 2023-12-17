@@ -187,10 +187,10 @@ button:active {
 button {
 	border: none;
 }
-h2 {
+h2, h3, h4, h5 ,h6 {
 	margin: 0;
 }
-p {
+p, b {
 	margin: 0;
 	padding: 0;
 }
@@ -198,3 +198,4 @@ span {
 	margin: 0;
 	padding: 0;
 }
+

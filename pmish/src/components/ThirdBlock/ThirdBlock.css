@@ -1,0 +1,102 @@
+.ThirdBlock {
+    display: flex;
+    height: 720px;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-image: url(./img/bcg.jpg);
+}
+.ThirdBlock__main {
+    width: 1220px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid #202020;
+}
+.ThirdBlock__main > h3{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color: #FFF;
+        font-family: Montserrat;
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 90px;
+        /* 214.286% */
+        letter-spacing: 0.84px;
+        align-self: start;
+}
+.ThirdBlock__main-cardBlock{
+    height: 420px;
+    width: 1220px;
+    display: flex;
+    justify-content: space-between;
+}
+.FirstCard{}
+.SecondCard{}
+.ThirdCard{
+}
+.card{
+    position: relative;
+    z-index: 2;
+    width: 359.096px;
+    height: 400.962px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #1E1E1E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card > b{
+    position: relative;
+    top: -22px;
+    width: 284.199px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    /* 120% */
+    letter-spacing: 0.5px;
+}
+.card > p{
+    width: 290.355px;
+    color: #FFF;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 21.6px;
+        /* 120% */
+        letter-spacing: 0.36px;
+}
+.card > span{
+    margin: 0 20px 0px 0px;
+    color: rgba(45, 45, 45, 0.68);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 67px;
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: 1.34px;
+    align-self: flex-end;
+}
+.FirstCard > svg{
+    position: relative;
+    top: -360px;
+    left: -5px;
+}
+.ThirdCard__shadow{
+    z-index: 0;
+    position: relative;
+    top: -350px;
+    right: -30px;
+    width: 364.775px;
+    height: 365.494px;
+    flex-shrink: 0;
+    border-radius: 20px 50px 20px 20px;
+    background: linear-gradient(131deg, rgba(67, 69, 190, 0.68) 50.37%, rgba(11, 111, 173, 0.68) 96.68%);
+}

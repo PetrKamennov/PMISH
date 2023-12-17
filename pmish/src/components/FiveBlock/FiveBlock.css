@@ -1,0 +1,73 @@
+.FiveBlock {
+    display: flex;
+    height: 1000px;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-image: url(./img/bcg.jpg);
+}
+
+.FiveBlock__main {
+    width: 1220px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid #202020;
+}
+.FiveBlock__main > h5{
+    margin: 50px 50px;
+    align-self: start;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 90px;
+    /* 214.286% */
+    letter-spacing: 0.84px;
+}
+.FiveBlock__main-grid{
+    display: grid;
+    grid-template-columns: 360px 360px 360px;
+    grid-template-rows: 324px 324px;
+    gap: 40px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+.FiveBlock__main-grid > div:nth-child(2n){
+    background: rgba(30, 30, 30, 0.68);
+}
+.FiveBlock__main-grid__cell{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 360px;
+    height: 324px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: linear-gradient(131deg, rgba(67, 69, 190, 0.68) 50.37%, rgba(11, 111, 173, 0.68) 96.68%);
+}
+.FiveBlock__main-grid__cell > b{
+    width: 290.355px;
+    margin: 42px 0;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 120% */
+    letter-spacing: 0.5px;
+}
+.FiveBlock__main-grid__cell>p {
+    width: 290.355px;
+    height: 148.929px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21.6px; /* 120% */
+    letter-spacing: 0.36px;
+}
