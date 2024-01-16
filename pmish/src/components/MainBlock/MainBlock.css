@@ -9,10 +9,13 @@
 	background-image: url(./img/bcg.jpg);
 }
 .MainBlock__right {
+	z-index: 1;
+	width: 60%;
 	height: 60%;
 	display: flex;
 	flex-direction: column;
 	justify-self: start;
+	margin-left: 75px;
 }
 
 .MainBlock__right > h1 {
@@ -44,4 +47,38 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+@media (max-width: 1366px) {
+	.MainBlock__left > img {
+		width: 100%;
+	}
+}
+@media (max-width: 1024px) {
+	.MainBlock__right{
+		width: 40%;
+	}
+}
+@media (max-width: 800px) {
+	.MainBlock__right > h1{
+		width: 540px;
+	}
+}
+@media (max-width: 640px) {
+	.MainBlock__right{
+		width: 100%;
+		align-items: center;
+		margin-left: 0px;
+	}
+	.MainBlock__right > h1{
+		width: 100%;
+		text-align: center;
+	}
+	.MainBlock__left{
+		display: flex;
+		position: absolute;
+		right: 0px;
+	}
+	.MainBlock{
+		height: 85vh;
+	}
 }
