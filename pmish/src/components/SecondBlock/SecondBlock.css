@@ -47,8 +47,11 @@
 	top: -59px;
 	position: relative;
 	display: flex;
-	width: 905px;
+	width: 85%;
 	justify-content: space-between;
+}
+.SecondBlock__main-statBlock__stat{
+	text-align: center;
 }
 .SecondBlock__main-statBlock__stat > p {
 	text-align: center;
@@ -75,4 +78,57 @@
 	font-weight: 500;
 	line-height: 21.6px; /* 120% */
 	letter-spacing: 0.36px;
+}
+@media (max-width: 800px) {
+	.SecondBlock__main-bookmark{
+		width: 10%;
+	}
+	.SecondBlock__main > h2{
+		font-size: 32px;
+		margin-top: 50px;
+		margin-bottom: 20px;
+	}
+	.SecondBlock__main > p{
+		font-size: 14px;
+		margin-bottom: 50px;
+	}
+	.SecondBlock__main-statBlock__stat > p{
+		font-size: 50px;
+	}
+	.SecondBlock__main-statBlock__stat > span{
+		font-size: 14px;
+	}
+}
+@media (max-width: 640px) {
+	.SecondBlock__main > h2{
+		font-size: 24px;
+	}
+	.SecondBlock__main > p{
+		font-size: 12px;
+	}
+	.SecondBlock__main-statBlock__stat > p{
+		font-size: 40px;
+	}
+	.SecondBlock__main-statBlock__stat > span{
+		font-size: 12px;
+	}
+}
+@media (max-width: 480px) {
+	.SecondBlock__main > h2{
+		font-size: 16px;
+	}
+	.SecondBlock__main > p{
+		font-size: 8px;
+	}
+	.SecondBlock__main-statBlock__stat > p{
+		font-size: 40px;
+	}
+	.SecondBlock__main-statBlock__stat > span{
+		font-size: 8px;
+	}
+}
+@media (max-width: 375px) {
+	.SecondBlock__main-statBlock__stat > span{
+		font-size: 6px;
+	}
 }

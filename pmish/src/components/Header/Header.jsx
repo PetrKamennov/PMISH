@@ -3,19 +3,10 @@ import './Header.css'
 import logoPISH from './img/logoPISH.png'
 import logoSamGMU from './img/logoSAMGMU.png'
 const Header = () => {
-	const MenuContext = createContext({
-		isMenuOpen: true,
-		toggleMenu: () => {},
-	  });
-	  
-	  const NavState = ({ children }) => {
-		const [isMenuOpen, toggleMenu] = useState(false);
-
-	  }
-		const { isMenuOpen, toggleMenuMode } = useContext(MenuContext);
-
+	const[active, setActive] = useState(false)
 		const clickHandler = (e) => {
-			e.preventDefault()
+			e.preventDefault();
+			setActive(!active)
 		};
 	return (
 		<>
@@ -24,17 +15,17 @@ const Header = () => {
 					<img src={logoPISH} alt='PISH' />
 					<img src={logoSamGMU} alt='SamGMU' />
 				</div>
-				<a href="" onClick={clickHandler} className={`burger_button ${isMenuOpen ? 'active' : ""}`}>
+				<a href="" onClick={clickHandler} className={`burger_button ${active ? 'active' : ""}`}>
 					<span className="button_bar"></span>
 					<span className="button_bar"></span>
 					<span className="button_bar"></span>
 				</a>
-				<nav className='Header__navblock'>
+				<nav className={`Header__navblock ${active ? 'active' : ""}`}>
 					<ul>
-						<li>Образование</li>
-						<li>Наука</li>
-						<li>Новости</li>
-						<li>Контакты</li>
+						<li className={`burger_li ${active ? 'active' : ""}`}>Образование</li>
+						<li className={`burger_li ${active ? 'active' : ""}`}>Наука</li>
+						<li className={`burger_li ${active ? 'active' : ""}`}>Новости</li>
+						<li className={`burger_li ${active ? 'active' : ""}`}>Контакты</li>
 					</ul>
 				</nav>
 			</header>
