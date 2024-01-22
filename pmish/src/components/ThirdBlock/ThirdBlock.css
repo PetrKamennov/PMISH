@@ -18,14 +18,14 @@
     margin-top: 60px;
     margin-bottom: 60px;
     color: #FFF;
-        font-family: Montserrat;
-        font-size: 42px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 90px;
-        /* 214.286% */
-        letter-spacing: 0.84px;
-        align-self: start;
+    font-family: Montserrat;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 90px;
+    letter-spacing: 0.84px;
+    align-self: start;
+    margin-left: 25px;
 }
 .ThirdBlock__main-cardBlock{
     height: 420px;
@@ -99,4 +99,84 @@
     flex-shrink: 0;
     border-radius: 20px 50px 20px 20px;
     background: linear-gradient(131deg, rgba(67, 69, 190, 0.68) 50.37%, rgba(11, 111, 173, 0.68) 96.68%);
+}
+@media (max-width: 1024px) {
+    .ThirdBlock__main-cardBlock{
+        width: 940px;
+        height: 350px;
+    }
+    .card{
+        width: 270px;
+        height: 350px;
+    }
+    .card > b{
+        width: 220px;
+        font-size: 20px;
+    }
+    .card > p{
+        width: 220px;
+        font-size: 12px;
+    }
+    .FirstCard > svg{
+        top: -330px;
+    }
+    .ThirdCard__shadow{
+        width: 265px;
+        height: 365px;
+    }
+}
+@media (max-width: 800px) {
+    .ThirdBlock{
+        height: 1400px;
+    }
+    .ThirdBlock__main > h3{
+        align-self: center;
+        margin-left: 0px;
+    }
+    .ThirdBlock__main-cardBlock{
+        width: 300px;
+        height: 1100px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .FirstCard{
+        height: 350px;
+    }
+    .ThirdCard{
+        height: 350px;
+    }
+    .card{
+        width: 270px;
+        height: 350px;
+    }
+    .card > b{
+        width: 220px;
+        font-size: 20px;
+    }
+    .card > p{
+        width: 220px;
+        font-size: 12px;
+    }
+    .FirstCard > svg{
+        top: -330px;
+    }
+    .ThirdCard__shadow{
+        width: 265px;
+        height: 365px;
+    }
+}
+@media (max-width: 800px){
+    .ThirdBlock__main > h3{
+        font-size: 36px;
+    }
+}
+@media (max-width: 425px){
+    .ThirdBlock__main > h3{
+        font-size: 21px;
+    }
+}
+@media (max-width: 320px){
+    .ThirdBlock__main > h3{
+        font-size: 18px;
+    }
 }
