@@ -82,3 +82,8 @@
 		height: 85vh;
 	}
 }
+@media (max-width: 480px) {
+	.MainBlock__right > h1{
+		font-size: 32px;
+	}
+}

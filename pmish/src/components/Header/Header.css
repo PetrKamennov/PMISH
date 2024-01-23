@@ -201,3 +201,8 @@
 		background-color: #fff;
 	}
 }
+@media (max-width:480px) {
+	.Header__iconBlock{
+		width: 150px;
+	}
+}

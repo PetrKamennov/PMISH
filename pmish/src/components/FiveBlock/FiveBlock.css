@@ -71,3 +71,144 @@
     line-height: 21.6px; /* 120% */
     letter-spacing: 0.36px;
 }
+@media (max-width:1280px) {
+    .FiveBlock__main-grid{
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 280px 280px;
+        gap: 35px;
+    }
+    .FiveBlock__main-grid__cell{
+        width: 300px;
+        height: 280px;
+    }
+    .FiveBlock__main-grid__cell > b{
+        width: 260px;
+        font-size: 20px;
+        margin: 35px 0px;
+    }
+    .FiveBlock__main-grid__cell > p{
+        width: 260px;
+        height: 150px;
+        font-size: 14px;
+    }
+}
+@media (max-width:1280px) {
+    .FiveBlock{
+        height: 770px;
+    }
+    .FiveBlock__main > h5{
+        font-size: 40px;
+    }
+    .FiveBlock__main-grid{
+        grid-template-columns: 250px 250px 250px;
+        grid-template-rows: 220px 220px;
+        gap: 25px;
+    }
+    .FiveBlock__main-grid__cell{
+        width: 250px;
+        height: 220px;
+    }
+    .FiveBlock__main-grid__cell > b{
+        width: 200px;
+        font-size: 18px;
+        margin: 25px 0px;
+    }
+    .FiveBlock__main-grid__cell > p{
+        width: 200px;
+        height: 90px;
+        font-size: 8px;
+    }
+}
+@media (max-width:920px) {
+    .FiveBlock{
+        height: 1000px;
+    }
+    .FiveBlock__main > h5{
+        align-self: center;
+        font-size: 38px;
+        margin: 50px 0px;
+    }
+    .FiveBlock__main-grid{
+        grid-template-columns: 250px 250px;
+        grid-template-rows: 220px 220px 220px;
+        gap: 25px;
+    }
+    .FiveBlock__main-grid__cell{
+        width: 250px;
+        height: 220px;
+    }
+    .FiveBlock__main-grid__cell > b{
+        width: 200px;
+        font-size: 18px;
+        margin: 25px 0px;
+    }
+    .FiveBlock__main-grid__cell > p{
+        width: 200px;
+        height: 90px;
+        font-size: 8px;
+    }
+}
+@media (max-width:920px) {
+    .FiveBlock{
+        height: 850px;
+    }
+    .FiveBlock__main > h5{
+        font-size: 34px;
+    }
+    .FiveBlock__main-grid{
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 180px 180px 180px;
+        gap: 25px;
+    }
+    .FiveBlock__main-grid__cell{
+        width: 200px;
+        height: 180px;
+    }
+    .FiveBlock__main-grid__cell > b{
+        width: 150px;
+        font-size: 14px;
+        margin: 10px 0px;
+    }
+    .FiveBlock__main-grid__cell > p{
+        width: 150px;
+        height: 90px;
+        font-size: 6px;
+    }
+}
+@media (max-width:640px) {
+    .FiveBlock__main > h5{
+        font-size: 28px;
+    }
+}
+@media (max-width:920px) {
+    .FiveBlock{
+        height: 1450px;
+    }
+    .FiveBlock__main > h5{
+        font-size: 20px;
+    }
+    .FiveBlock__main-grid{
+        grid-template-columns: 200px;
+        grid-template-rows: 180px;
+        gap: 25px;
+    }
+    .FiveBlock__main-grid__cell{
+        width: 200px;
+        height: 180px;
+    }
+    .FiveBlock__main-grid__cell > b{
+        width: 150px;
+        font-size: 14px;
+        margin: 10px 0px;
+    }
+    .FiveBlock__main-grid__cell > p{
+        width: 150px;
+        height: 90px;
+        font-size: 6px;
+    }
+}
+@media (max-width:375px) {
+    .FiveBlock__main > h5{
+        font-size: 16px;
+    }
+}

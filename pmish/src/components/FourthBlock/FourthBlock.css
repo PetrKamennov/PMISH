@@ -50,7 +50,7 @@
 }
 .FourthBlock__main-grid__cell>p {
     margin-top: 50px;
-color: #FFF;
+    color: #FFF;
     text-align: center;
     font-family: Montserrat;
     font-size: 25px;
@@ -58,4 +58,107 @@ color: #FFF;
     font-weight: 500;
     line-height: 30px;
     /* 120% */
-    letter-spacing: 0.5px;}
+    letter-spacing: 0.5px;
+}
+@media (max-width: 1280px) {
+    .FourthBlock{
+        height: 1100px;
+    }
+    .FourthBlock__main-grid__top{
+        width: 1000px;
+    }
+    .FourthBlock__main-grid__bottom{
+        width: 1000px;
+    }
+    .FourthBlock__main-grid__cell{
+        width: 350px;
+    }
+}
+@media (max-width: 980px) {
+    .FourthBlock__main-grid__top{
+        width: 750px;
+    }
+    .FourthBlock__main-grid__bottom{
+        width: 750px;
+    }
+    .FourthBlock__main-grid__cell{
+        width: 190px;
+    }
+    .FourthBlock__main-grid__cell > p{
+        font-size: 18px;
+    }
+}
+@media (max-width: 768px) {
+    .FourthBlock__main-grid__top{
+        width: 500px;
+    }
+    .FourthBlock__main-grid__bottom{
+        width: 500px;
+        margin-top: 95px;
+    }
+    .FourthBlock__main-grid__cell{
+        width: 150px;
+    }
+    .FourthBlock__main-grid__cell > img{
+        width: 45%;
+        margin-bottom: 0px;
+    }
+    .FourthBlock__main-grid__cell > p{
+        font-size: 14px;
+    }
+}
+@media (max-width: 425px) {
+    .FourthBlock{
+        height: 770px;
+    }
+    .FourthBlock__main > h4{
+        font-size: 28px;
+    }
+    .FourthBlock__main-grid__top{
+        width: 350px;
+        margin-top: 90px;
+    }
+    .FourthBlock__main-grid__bottom{
+        width: 350px;
+        margin-top: 90px;
+    }
+    .FourthBlock__main-grid__cell{
+        width: 100px;
+    }
+    .FourthBlock__main-grid__cell > img{
+        width: 35%;
+        margin-bottom: 0px;
+    }
+    .FourthBlock__main-grid__cell > p{
+        font-size: 8px;
+    }
+}
+@media (max-width: 320px) {
+    .FourthBlock{
+        height: 1350px;
+    }
+    .FourthBlock__main > h4{
+        margin-top: 40px;
+        font-size: 22px;
+    }
+    .FourthBlock__main-grid__top{
+        width: 350px;
+        margin-top: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .FourthBlock__main-grid__bottom{
+        width: 350px;
+        margin-top: 0px;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+    .FourthBlock__main-grid__cell{
+        width: 250px;
+        margin-bottom: 25px;
+    }
+    .FourthBlock__main-grid__cell > p{
+        font-size: 16px;
+    }
+}

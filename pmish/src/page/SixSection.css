@@ -33,15 +33,13 @@ body{
   font-family: 'Montserrat';
   margin: 0px 6%;
 }
-.content-block{
-  width: 33.3%;
-}
 .content-txt{
   display: flex;
   width: 415px;
   height: 250px;
 }
 .text-img{
+  width: 100px;
   font-family: 'Montserrat';
   text-align: center;
   font-size: 67px;
@@ -74,8 +72,6 @@ body{
   
 }
 .content-icon{
-  width: 140px;
-  height: 90px;
   padding-bottom: 10%;
 }
 .icon-txt{
@@ -99,4 +95,80 @@ body{
   width: 1302px;
   height: 1px;
   background: #202020;
+}
+@media (max-width: 1080px) {
+  .content-txt{
+    width: 350px;
+    height: 200px;
+  }
+  .text-block{
+    width: 256px;
+    height: 200px;
+  }
+  .text-block-title{
+    font-size: 22px;
+  }
+  .text-block-content{
+    font-size: 12px;
+  }
+  .icon-txt{
+    font-size: 120px;
+  }
+}
+@media (max-width: 800px) {
+  .content-txt{
+    width: 300px;
+    height: 160px;
+  }
+  .text-img{
+    text-align: center;
+    margin-right: 0px;
+    font-size: 50px;
+  }
+  .text-block{
+    width: 170px;
+    height: 160px;
+  }
+  .text-block-title{
+    font-size: 20px;
+  }
+  .text-block-content{
+    font-size: 10px;
+  }
+  .icon-txt{
+    font-size: 110px;
+  }
+}
+@media (max-width: 640px) {
+  .six-container{
+    height: 1210px;
+  }
+  .block-header{
+    padding-left: 0px;
+    text-align: center;
+  }
+  .block-content{
+    flex-direction: column;
+  }
+  .content-txt{
+    flex-direction: column;
+    align-items: center;
+    width: 230px;
+    height: 200px;
+    margin-bottom: 25px;
+  }
+  .text-block{
+    text-align: center;
+    width: 160px;
+    height: 140px;
+  }
+  .content-icon{
+    padding-bottom: 0px;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 640px) {
+  .block-header{
+    font-size: 28px;
+  }
 }
