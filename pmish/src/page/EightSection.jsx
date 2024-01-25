@@ -4,12 +4,25 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
 function EightSection(){
+    function AdaptiveSize(){
+        if(window.innerWidth<=1366 && window.innerWidth>1024){
+            return 2.5
+        }else if(window.innerWidth<=1024 && window.innerWidth>768){
+            return 2
+        }else if(window.innerWidth<=768 && window.innerWidth>640){
+            return 1.5
+        }else if(window.innerWidth<=640){
+            return 1
+        }else{
+            return 3.75
+        }
+    }
     return(
         <div className="Eight-section_container slider-block">
             <h1 className="slider-block-title">Новости</h1>
             <Swiper
-                spaceBetween={40}
-                slidesPerView={3}
+                spaceBetween={50}
+                slidesPerView={AdaptiveSize()}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
             >

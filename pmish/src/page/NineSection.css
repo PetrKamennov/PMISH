@@ -1,5 +1,4 @@
 .Nine-section_container{
-    padding: 0px 0px 0px 135px;
     width: 100%;
     height: 846px;
     background-image: url("../image/bg4.png");
@@ -14,7 +13,7 @@
     font-weight: 600;
     letter-spacing: 0.84px;
     margin: 0px;
-    padding: 70px 0px;
+    padding: 70px 0px 70px 137px;
 }
 .card-block_container{
     display: flex;
@@ -36,9 +35,6 @@
     width: 225px;
     height: 225px;
     padding-top: 75px;
-}
-.img_logo{
-
 }
 .card-block_title{
     margin: 0px;
@@ -75,4 +71,40 @@
 .card-slide{
     width: 370px !important;
     height: 510px !important;
+}
+@media (max-width: 425px) {
+    .Nine-section_container{
+        height: 580px;
+    }
+    .card-block_container{
+        height: 370px;
+    }
+    .card-slide{
+        width: 270px !important;
+        height: 370px !important;
+    }
+    .card-block_image{
+        padding-top: 50px;
+        width: 150px;
+        height: 150px;
+    }
+    .card-block_image > img{
+        width: 100%;
+        height: 100%;
+    }
+    .card-block_contain{
+        width: 100%;
+    }
+    .card-block_title{
+        font-size: 18px;
+    }
+    .card-block_txt{
+        width: 245px;
+        font-size: 16px;
+        padding-left: 25px;
+    }
+    .card-block-title{
+        text-align: center;
+        padding: 35px 0px 35px 0px;
+    }
 }

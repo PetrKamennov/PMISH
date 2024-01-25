@@ -10,7 +10,7 @@ function NineSection(){
             <h1 className="card-block-title">Команда</h1>
             <Swiper
                 spaceBetween={50}
-                slidesPerView={3}
+                slidesPerView= 'auto'
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
             >

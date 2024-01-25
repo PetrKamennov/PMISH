@@ -139,16 +139,18 @@
     }
     .FourthBlock__main > h4{
         margin-top: 40px;
-        font-size: 22px;
+        font-size: 34px;
+        text-align: center;
+        line-height: 1.5;
     }
     .FourthBlock__main-grid__top{
-        width: 350px;
+        width: 300px;
         margin-top: 50px;
         flex-direction: column;
         align-items: center;
     }
     .FourthBlock__main-grid__bottom{
-        width: 350px;
+        width: 300px;
         margin-top: 0px;
         flex-direction: column;
         align-items: center;

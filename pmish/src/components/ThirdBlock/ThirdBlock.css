@@ -33,10 +33,6 @@
     display: flex;
     justify-content: space-between;
 }
-.FirstCard{}
-.SecondCard{}
-.ThirdCard{
-}
 .card{
     position: relative;
     z-index: 2;
@@ -130,8 +126,11 @@
         height: 1400px;
     }
     .ThirdBlock__main > h3{
-        align-self: center;
         margin-left: 0px;
+        font-size: 36px;
+        text-align: center;
+        align-self: center;
+        line-height: 1.5;
     }
     .ThirdBlock__main-cardBlock{
         width: 300px;
@@ -165,18 +164,8 @@
         height: 365px;
     }
 }
-@media (max-width: 800px){
-    .ThirdBlock__main > h3{
-        font-size: 36px;
-    }
-}
 @media (max-width: 425px){
     .ThirdBlock__main > h3{
-        font-size: 21px;
-    }
-}
-@media (max-width: 320px){
-    .ThirdBlock__main > h3{
-        font-size: 18px;
+        font-size: 30px;
     }
 }

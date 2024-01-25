@@ -185,7 +185,8 @@
         height: 1450px;
     }
     .FiveBlock__main > h5{
-        font-size: 20px;
+        text-align: center;
+        line-height: 1.5;
     }
     .FiveBlock__main-grid{
         grid-template-columns: 200px;
@@ -209,6 +210,6 @@
 }
 @media (max-width:375px) {
     .FiveBlock__main > h5{
-        font-size: 16px;
+        font-size: 26px;
     }
 }

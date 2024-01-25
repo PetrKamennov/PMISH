@@ -101,7 +101,7 @@
 		height: 100%;
 		margin: 0px;
 		align-items: center;
-		background: #082bff none repeat scroll 0% 0%;
+		background: #4345be none repeat scroll 0% 0%;
 		color: rgb(248, 248, 248);
 		min-width: 0px;
 		min-height: 0px;
@@ -110,7 +110,7 @@
 		padding: 6px 60px;
 		box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px;
 		z-index: 500;
-		transform: translateY(45%);
+		transform: translateY(42.5%);
 	}
 	.Header__navblock > ul{
 		padding-left: 0px;
