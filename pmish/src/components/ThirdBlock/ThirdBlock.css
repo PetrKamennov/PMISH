@@ -1,171 +1,175 @@
 .ThirdBlock {
-    display: flex;
-    height: 720px;
-    flex-direction: column;
-    align-items: center;
-    background-size: cover;
-    background-image: url(./img/bcg.jpg);
+	display: flex;
+	min-height: 720px;
+	flex-direction: column;
+	align-items: center;
+	background-size: cover;
+	background-image: url(./img/bcg.jpg);
 }
 .ThirdBlock__main {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-bottom: 2px solid #202020;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-bottom: 2px solid #202020;
 }
-.ThirdBlock__main > h3{
-    margin-top: 60px;
-    margin-bottom: 60px;
-    color: #FFF;
-    font-family: Montserrat;
-    font-size: 42px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 90px;
-    letter-spacing: 0.84px;
-    align-self: start;
-    margin-left: 25px;
+.ThirdBlock__main > h3 {
+	margin-top: 60px;
+	margin-bottom: 60px;
+	color: #fff;
+	font-family: Montserrat;
+	font-size: 42px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 90px;
+	letter-spacing: 0.84px;
+	align-self: start;
+	margin-left: 25px;
 }
-.ThirdBlock__main-cardBlock{
-    height: 420px;
-    width: 1220px;
-    display: flex;
-    justify-content: space-between;
+.ThirdBlock__main-cardBlock {
+	height: 420px;
+	width: 1220px;
+	display: flex;
+	justify-content: space-between;
 }
-.card{
-    position: relative;
-    z-index: 2;
-    width: 359.096px;
-    height: 400.962px;
-    flex-shrink: 0;
-    border-radius: 20px;
-    background: #1E1E1E;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.card {
+	position: relative;
+	z-index: 2;
+	width: 359.096px;
+	height: 400.962px;
+	flex-shrink: 0;
+	border-radius: 20px;
+	background: #1e1e1e;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
-.card > b{
-    position: relative;
-    top: -22px;
-    width: 284.199px;
-    color: #FFF;
-    font-family: Montserrat;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 30px;
-    /* 120% */
-    letter-spacing: 0.5px;
+.card > b {
+	position: relative;
+	top: -22px;
+	width: 284.199px;
+	color: #fff;
+	font-family: Montserrat;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 30px;
+	/* 120% */
+	letter-spacing: 0.5px;
 }
-.card > p{
-    width: 290.355px;
-    color: #FFF;
-        font-family: Montserrat;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 21.6px;
-        /* 120% */
-        letter-spacing: 0.36px;
+.card > p {
+	width: 290.355px;
+	color: #fff;
+	font-family: Montserrat;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 21.6px;
+	/* 120% */
+	letter-spacing: 0.36px;
 }
-.card > span{
-    margin: 0 20px 0px 0px;
-    color: rgba(45, 45, 45, 0.68);
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 67px;
-    font-style: normal;
-    font-weight: 900;
-    letter-spacing: 1.34px;
-    align-self: flex-end;
+.card > span {
+	margin: 0 20px 0px 0px;
+	color: rgba(45, 45, 45, 0.68);
+	text-align: center;
+	font-family: Montserrat;
+	font-size: 67px;
+	font-style: normal;
+	font-weight: 900;
+	letter-spacing: 1.34px;
+	align-self: flex-end;
 }
-.FirstCard > svg{
-    position: relative;
-    top: -360px;
-    left: -5px;
+.FirstCard > svg {
+	position: relative;
+	top: -360px;
+	left: -5px;
 }
-.ThirdCard__shadow{
-    z-index: 0;
-    position: relative;
-    top: -350px;
-    right: -30px;
-    width: 364.775px;
-    height: 365.494px;
-    flex-shrink: 0;
-    border-radius: 20px 50px 20px 20px;
-    background: linear-gradient(131deg, rgba(67, 69, 190, 0.68) 50.37%, rgba(11, 111, 173, 0.68) 96.68%);
+.ThirdCard__shadow {
+	z-index: 0;
+	position: relative;
+	top: -350px;
+	right: -30px;
+	width: 364.775px;
+	height: 365.494px;
+	flex-shrink: 0;
+	border-radius: 20px 50px 20px 20px;
+	background: linear-gradient(
+		131deg,
+		rgba(67, 69, 190, 0.68) 50.37%,
+		rgba(11, 111, 173, 0.68) 96.68%
+	);
 }
 @media (max-width: 1024px) {
-    .ThirdBlock__main-cardBlock{
-        width: 940px;
-        height: 350px;
-    }
-    .card{
-        width: 270px;
-        height: 350px;
-    }
-    .card > b{
-        width: 220px;
-        font-size: 20px;
-    }
-    .card > p{
-        width: 220px;
-        font-size: 12px;
-    }
-    .FirstCard > svg{
-        top: -330px;
-    }
-    .ThirdCard__shadow{
-        width: 265px;
-        height: 365px;
-    }
+	.ThirdBlock__main-cardBlock {
+		width: 940px;
+		height: 350px;
+	}
+	.card {
+		width: 270px;
+		height: 350px;
+	}
+	.card > b {
+		width: 220px;
+		font-size: 20px;
+	}
+	.card > p {
+		width: 220px;
+		font-size: 12px;
+	}
+	.FirstCard > svg {
+		top: -330px;
+	}
+	.ThirdCard__shadow {
+		width: 265px;
+		height: 365px;
+	}
 }
 @media (max-width: 800px) {
-    .ThirdBlock{
-        height: 1400px;
-    }
-    .ThirdBlock__main > h3{
-        margin-left: 0px;
-        font-size: 36px;
-        text-align: center;
-        align-self: center;
-        line-height: 1.5;
-    }
-    .ThirdBlock__main-cardBlock{
-        width: 300px;
-        height: 1100px;
-        flex-direction: column;
-        align-items: center;
-    }
-    .FirstCard{
-        height: 350px;
-    }
-    .ThirdCard{
-        height: 350px;
-    }
-    .card{
-        width: 270px;
-        height: 350px;
-    }
-    .card > b{
-        width: 220px;
-        font-size: 20px;
-    }
-    .card > p{
-        width: 220px;
-        font-size: 12px;
-    }
-    .FirstCard > svg{
-        top: -330px;
-    }
-    .ThirdCard__shadow{
-        width: 265px;
-        height: 365px;
-    }
+	.ThirdBlock {
+		height: 1400px;
+	}
+	.ThirdBlock__main > h3 {
+		margin-left: 0px;
+		font-size: 36px;
+		text-align: center;
+		align-self: center;
+		line-height: 1.5;
+	}
+	.ThirdBlock__main-cardBlock {
+		width: 300px;
+		height: 1100px;
+		flex-direction: column;
+		align-items: center;
+	}
+	.FirstCard {
+		height: 350px;
+	}
+	.ThirdCard {
+		height: 350px;
+	}
+	.card {
+		width: 270px;
+		height: 350px;
+	}
+	.card > b {
+		width: 220px;
+		font-size: 20px;
+	}
+	.card > p {
+		width: 220px;
+		font-size: 12px;
+	}
+	.FirstCard > svg {
+		top: -330px;
+	}
+	.ThirdCard__shadow {
+		width: 265px;
+		height: 365px;
+	}
 }
-@media (max-width: 425px){
-    .ThirdBlock__main > h3{
-        font-size: 30px;
-    }
+@media (max-width: 425px) {
+	.ThirdBlock__main > h3 {
+		font-size: 30px;
+	}
 }

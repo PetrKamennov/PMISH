@@ -1,66 +1,47 @@
-import React from "react";
-import "./NineSection.css";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import img from "../image/Intersect.png"
+import React, { useEffect, useState } from 'react'
+import './NineSection.css'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css'
+import img from '../image/Intersect.png'
+import Team from '../components/NineSection/Team'
+import axios from 'axios'
 
-function NineSection(){
-    return(
-        <div className="Nine-section_container card-block">
-            <h1 className="card-block-title">Команда</h1>
-            <Swiper
-                spaceBetween={50}
-                slidesPerView= 'auto'
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
-            >
-                <SwiperSlide className="card-slide">
-                    <div className="card-block_container">
-                        <div className="card-block_image img">
-                            <img src={img} alt="" className="img_logo" />
-                        </div>
-                        <div className="card-block_contain">
-                            <h2 className="card-block_title">Михайлов Михаил</h2>
-                            <p className="card-block_txt">Руководитель курса/программы “Название курса/программы”</p>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide className="card-slide">
-                    <div className="card-block_container">
-                        <div className="card-block_image img">
-                            <img src={img} alt="" className="img_logo" />
-                        </div>
-                        <div className="card-block_contain">
-                            <h2 className="card-block_title">Михайлов Михаил</h2>
-                            <p className="card-block_txt">Руководитель курса/программы “Название курса/программы”</p>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide className="card-slide">
-                    <div className="card-block_container">
-                        <div className="card-block_image img">
-                            <img src={img} alt="" className="img_logo" />
-                        </div>
-                        <div className="card-block_contain">
-                            <h2 className="card-block_title">Михайлов Михаил</h2>
-                            <p className="card-block_txt">Руководитель курса/программы “Название курса/программы”</p>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide className="card-slide">
-                    <div className="card-block_container">
-                        <div className="card-block_image img">
-                            <img src={img} alt="" className="img_logo" />
-                        </div>
-                        <div className="card-block_contain">
-                            <h2 className="card-block_title">Михайлов Михаил</h2>
-                            <p className="card-block_txt">Руководитель курса/программы “Название курса/программы”</p>
-                        </div>
-                    </div>
-                </SwiperSlide>
-            </Swiper>
-        </div>
-    )
+function NineSection() {
+	const [update, setUpdate] = useState(false)
+	const [news, setnews] = useState([])
+	async function getnews() {
+		axios
+			.get(`http://raduga.aleksbcg.beget.tech/team/`, {})
+			.then(response => {
+				setnews(response.data)
+			})
+			.catch(function (error) {
+				console.log(error)
+			})
+	}
+	console.log(news)
+	useEffect(() => {
+		if (update) return
+		getnews()
+	}, [update])
+
+	return (
+		<div className='Nine-section_container card-block'>
+			<h1 className='card-block-title'>Команда</h1>
+			<Swiper
+				spaceBetween={50}
+				slidesPerView='auto'
+				onSlideChange={() => console.log('slide change')}
+				onSwiper={swiper => console.log(swiper)}
+			>
+				{news.map((news, index) => (
+					<SwiperSlide className='card-slide'>
+						<Team news={news} />
+					</SwiperSlide>
+				))}
+			</Swiper>
+		</div>
+	)
 }
 
-export default NineSection;
+export default NineSection

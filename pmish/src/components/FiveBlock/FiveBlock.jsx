@@ -4,42 +4,11 @@ import GridCell from './GridCell'
 import axios from 'axios'
 const FiveBlock = () => {
 	const [update, setUpdate] = useState(false)
-	const [cell, setCell] = useState([
-		{
-			EducationTitle: 'Образовательная программа',
-			EducationText:
-				'Программа магистратуры ПИШ включает в себя более глубокое изучение различных областей медицинской инженерии и научных исследований',
-		},
-		{
-			EducationTitle: 'Образовательная программа',
-			EducationText:
-				'Программа магистратуры ПИШ включает в себя более глубокое изучение различных областей медицинской инженерии и научных исследований',
-		},
-		{
-			EducationTitle: 'Образовательная программа',
-			EducationText:
-				'Программа магистратуры ПИШ включает в себя более глубокое изучение различных областей медицинской инженерии и научных исследований',
-		},
-		{
-			EducationTitle: 'Образовательная программа',
-			EducationText:
-				'Программа магистратуры ПИШ включает в себя более глубокое изучение различных областей медицинской инженерии и научных исследований',
-		},
-		{
-			EducationTitle: 'Образовательная программа',
-			EducationText:
-				'Программа магистратуры ПИШ включает в себя более глубокое изучение различных областей медицинской инженерии и научных исследований',
-		},
-		{
-			EducationTitle: 'Образовательная программа',
-			EducationText:
-				'Программа магистратуры ПИШ включает в себя более глубокое изучение различных областей медицинской инженерии и научных исследований',
-		},
-	])
+	const [cell, setCell] = useState([])
 
 	async function getcell() {
 		axios
-			.get(`http://localhost:8080/Section`, {})
+			.get(`http://raduga.aleksbcg.beget.tech/eduProgs/`, {})
 			.then(response => {
 				setCell(response.data)
 			})
@@ -47,6 +16,8 @@ const FiveBlock = () => {
 				console.log(error)
 			})
 	}
+
+	console.log(cell)
 
 	useEffect(() => {
 		if (update) return

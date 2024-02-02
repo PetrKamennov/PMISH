@@ -3,7 +3,7 @@ import '../../page/EightSection.css'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import axios from 'axios'
 
-function NewsBlock(props) {
+function Team(props) {
 	const [img, setimg] = useState([])
 	const [update, setUpdate] = useState(false)
 
@@ -25,15 +25,16 @@ function NewsBlock(props) {
 		getnews()
 	}, [update])
 	return (
-		<div className='slider-block_container'>
-			<div className='slider-block_contain'>
-				<img src={img} alt='12' />
-				<h2 className='slider-block_title'>{props.news.newsShortText}</h2>
-				<p className='slider-block_txt'>{props.news.newsMainText}</p>
-				<span className='slider-block_date'>{props.news.NewsMainText}</span>
+		<div className='card-block_container'>
+			<div className='card-block_image img'>
+				<img src={img} alt='img' className='img_logo' />
+			</div>
+			<div className='card-block_contain'>
+				<h2 className='card-block_title'>{props.news.nameMember}</h2>
+				<p className='card-block_txt'>{props.news.teamText}</p>
 			</div>
 		</div>
 	)
 }
 
-export default NewsBlock
+export default Team
