@@ -48,17 +48,17 @@
 	justify-content: center;
 	align-items: center;
 }
-#header #go button:hover {
+button:hover {
 	border: none;
 	outline: none;
 }
 
-#header #go button:active {
+button:active {
 	border: none;
 	outline: none;
 }
 
-#header #go button:focus {
+button:focus {
 	border: none;
 	outline: none;
 }
