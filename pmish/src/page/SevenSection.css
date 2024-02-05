@@ -1,226 +1,236 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
-body{
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
+body {
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
 }
-.Seven_section{
-    background-image: url("../image/bgc2.png");
-    background-size: cover;
-    height: 890px;
-    padding: 0px 9.5%;
+.Seven_section {
+	background-image: url('../image/bgc2.png');
+	background-size: cover;
+	min-height: 890px;
+	padding: 0px 9.5%;
 }
-.science-group_title{
-    color: #FFF;
-    font-family: "Montserrat";
-    font-size: 42px;
-    font-style: normal;
-    font-weight: 600;
-    letter-spacing: 0.84px;
-    margin: 0px;
-    padding: 70px 0px 70px 30px;
+.science-group_title {
+	color: #fff;
+	font-family: 'Montserrat';
+	font-size: 42px;
+	font-style: normal;
+	font-weight: 600;
+	letter-spacing: 0.84px;
+	margin: 0px;
+	padding: 70px 0px 70px 30px;
 }
-.science-group_block{
-    display: flex;
-    justify-content: space-around;
+.science-group_block {
+	display: grid;
+	grid-template-columns: 565px 565px;
+	/* grid-template-rows: 303px 303px; */
+	gap: 40px;
+	justify-content: center;
 }
-.content-block_left-group{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    height: 303px;
-    border-radius: 20px;
-    background-image: url("../image/bgcblock.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    margin-bottom: 40px;
+.content-block_left-group {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 303px;
+	border-radius: 20px;
+	background-image: url('../image/bgcblock.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	/* margin-bottom: 40px; */
 }
-.left-group_title{
-    color: #FFF;
-    font-family: "Montserrat";
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    margin: 0px;
-    padding: 65px 180px 48px 60px;
+.left-group_title {
+	color: #fff;
+	font-family: 'Montserrat';
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	margin: 0px;
+	padding: 65px 180px 48px 60px;
 }
-.left-group_txt{
-    width: 350px;
-    height: 100px;
-    color: #FFF;
-    font-family: "Montserrat";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    letter-spacing: 0.36px;
-    margin: 0px;
+.left-group_txt {
+	width: 350px;
+	height: 100px;
+	color: #fff;
+	font-family: 'Montserrat';
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	letter-spacing: 0.36px;
+	margin: 0px;
 }
-.content-block_right-group:first-child{
-    margin-bottom: 40px;
+.content-block_right-group:first-child {
+	margin-bottom: 40px;
 }
 
-.content-block_right-group{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    height: 303px;
-    border-radius: 20px;
-    background-image: url("../image/bgcblock.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+.content-block_right-group {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 303px;
+	border-radius: 20px;
+	background-image: url('../image/bgcblock.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
-.right-group_title{
-    color: #FFF;
-    font-family: "Montserrat";
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    margin: 0px;
-    padding: 65px 180px 48px 60px;
+.right-group_title {
+	color: #fff;
+	font-family: 'Montserrat';
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	margin: 0px;
+	padding: 65px 180px 48px 60px;
 }
-.right-group_txt{
-    width: 350px;
-    height: 100px;
-    color: #FFF;
-    font-family: "Montserrat";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    letter-spacing: 0.36px;
-    margin: 0px;
+.right-group_txt {
+	width: 350px;
+	height: 100px;
+	color: #fff;
+	font-family: 'Montserrat';
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	letter-spacing: 0.36px;
+	margin: 0px;
 }
 @media (max-width: 1280px) {
-    .Seven_section{
-        height: 785px;
-    }
-    .content-block_left-group{
-        width: 100%;
-        height: 250px;
-    }
-    .content-block_right-group{
-        width: 100%;
-        height: 250px;
-    }
-    .right-group_title{
-        padding: 30px 100px 30px 60px;
-    }
-    .left-group_title{
-        padding: 30px 100px 30px 60px;
-    }
-    .content-block_left{
-        width: 450px;
-    }
-    .content-block_right{
-        width: 450px;
-    }
+	.Seven_section {
+		min-height: 785px;
+	}
+	.science-group_block {
+		grid-template-columns: 565px;
+	}
+	.content-block_left-group {
+		width: 100%;
+		/* height: 250px; */
+	}
+	.content-block_right-group {
+		width: 100%;
+		/* height: 250px; */
+	}
+	.right-group_title {
+		padding: 30px 100px 30px 60px;
+	}
+	.left-group_title {
+		padding: 30px 100px 30px 60px;
+	}
+	.content-block_left {
+		width: 450px;
+	}
+	.content-block_right {
+		width: 450px;
+	}
 }
 @media (max-width: 1024px) {
-    .content-block_left-group{
-        width: 100%;
-        height: 250px;
-    }
-    .content-block_right-group{
-        width: 100%;
-        height: 250px;
-    }
-    .right-group_title{
-        padding: 35px 50px 35px 30px;
-    }
-    .left-group_title{
-        padding: 35px 50px 35px 30px;
-    }
-    .right-group_txt{
-        width: 310px;
-        font-size: 16px;
-    }
-    .left-group_txt{
-        width: 310px;
-        font-size: 16px;
-    }
-    .content-block_left{
-        width: 375px;
-    }
-    .content-block_right{
-        width: 375px;
-    }
+	.content-block_left-group {
+		width: 100%;
+		/* height: 250px; */
+	}
+	.content-block_right-group {
+		width: 100%;
+		/* height: 250px; */
+	}
+	.right-group_title {
+		padding: 35px 50px 35px 30px;
+	}
+	.left-group_title {
+		padding: 35px 50px 35px 30px;
+	}
+	.right-group_txt {
+		width: 310px;
+		font-size: 16px;
+	}
+	.left-group_txt {
+		width: 310px;
+		font-size: 16px;
+	}
+	.content-block_left {
+		width: 375px;
+	}
+	.content-block_right {
+		width: 375px;
+	}
 }
 @media (max-width: 800px) {
-    .Seven_section{
-        height: 1080px;
-    }
-    .science-group_title{
-        font-size: 32px;
-        padding: 35px 0px;
-        text-align: center;
-    }
-    .science-group_block{
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        margin-bottom: 50px;
-    }
-    .content-block_left-group{
-        width: 100%;
-        height: 200px;
-    }
-    .content-block_right-group{
-        width: 100%;
-        height: 200px;
-    }
-    .right-group_title{
-        font-size: 18px;
-    }
-    .left-group_title{
-        font-size: 18px;
-    }
-    .right-group_txt{
-        width: 240px;
-        font-size: 12px;
-    }
-    .left-group_txt{
-        width: 240px;
-        font-size: 12px;
-    }
-    .content-block_left{
-        width: 300px;
-    }
-    .content-block_right{
-        width: 300px;
-    }
+	.science-group_block {
+		grid-template-columns: 365px;
+	}
+	.Seven_section {
+		min-height: 1080px;
+	}
+	.science-group_title {
+		font-size: 32px;
+		padding: 35px 0px;
+		text-align: center;
+	}
+	.science-group_block {
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		margin-bottom: 50px;
+	}
+	.content-block_left-group {
+		width: 100%;
+		height: 220px;
+	}
+	.content-block_right-group {
+		width: 100%;
+		height: 220px;
+	}
+	.right-group_title {
+		font-size: 18px;
+	}
+	.left-group_title {
+		font-size: 18px;
+	}
+	.right-group_txt {
+		width: 240px;
+		font-size: 12px;
+	}
+	.left-group_txt {
+		width: 240px;
+		font-size: 12px;
+	}
+	.content-block_left {
+		width: 300px;
+	}
+	.content-block_right {
+		width: 300px;
+	}
 }
 @media (max-width: 425px) {
-    .Seven_section{
-        height: 980px;
-        padding: 0;
-    }
-    .content-block_left-group{
-        height: 175px;
-    }
-    .content-block_right-group{
-        height: 175px;
-    }
-    .right-group_title{
-        font-size: 14px;
-    }
-    .left-group_title{
-        font-size: 14px;
-    }
-    .right-group_txt{
-        width: 190px;
-        font-size: 8px;
-    }
-    .left-group_txt{
-        width: 190px;
-        font-size: 8px;
-    }
-    .content-block_left{
-        width: 250px;
-    }
-    .content-block_right{
-        width: 250px;
-    }
+	.Seven_section {
+		min-height: 980px;
+		padding: 0;
+	}
+	.science-group_block {
+		grid-template-columns: 265px;
+	}
+	.content-block_left-group {
+		height: 175px;
+	}
+	.content-block_right-group {
+		height: 175px;
+	}
+	.right-group_title {
+		font-size: 14px;
+	}
+	.left-group_title {
+		font-size: 14px;
+	}
+	.right-group_txt {
+		width: 190px;
+		font-size: 8px;
+	}
+	.left-group_txt {
+		width: 190px;
+		font-size: 8px;
+	}
+	.content-block_left {
+		width: 250px;
+	}
+	.content-block_right {
+		width: 250px;
+	}
 }

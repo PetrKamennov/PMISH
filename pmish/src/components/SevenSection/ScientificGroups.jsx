@@ -3,16 +3,13 @@ import '../../page/SevenSection.css'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import axios from 'axios'
 
-function NewsBlock(props) {
+function ScientificGroups(props) {
 	return (
 		<div className='content-block_left-group left-group'>
-			<h2 className='left-group_title'>Биомедицинская электроника</h2>
-			<p className='left-group_txt'>
-				Изучение и разработка электронных устройств, используемых в медицинских
-				целях
-			</p>
+			<h2 className='left-group_title'>{props.group.scientificGroupsTitle}</h2>
+			<p className='left-group_txt'>{props.group.scientificGroupsText}</p>
 		</div>
 	)
 }
 
-export default NewsBlock
+export default ScientificGroups
