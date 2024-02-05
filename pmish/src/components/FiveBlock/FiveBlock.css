@@ -203,13 +203,13 @@
 	}
 	.FiveBlock__main-grid__cell > b {
 		width: 150px;
-		font-size: 14px;
+		font-size: 18px;
 		margin: 10px 0px;
 	}
 	.FiveBlock__main-grid__cell > p {
 		width: 150px;
 		height: 90px;
-		font-size: 6px;
+		font-size: 12px;
 	}
 }
 @media (max-width: 375px) {
