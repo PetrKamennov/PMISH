@@ -5,6 +5,9 @@ body {
 	overflow-x: hidden;
 }
 .Seven_section {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	background-image: url('../image/bgc2.png');
 	background-size: cover;
 	min-height: 890px;

@@ -3,7 +3,7 @@ import icon from '../image/ic.png'
 
 function SixSection() {
   return (
-    <div className="six-container block">
+    <div className="six-container block" id='two'>
       <h1 className='block-header'>Вклад в науку</h1>
       <div className="block-content content">
         <div className="content-block">

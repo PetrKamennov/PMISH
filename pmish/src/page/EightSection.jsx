@@ -40,7 +40,7 @@ function EightSection() {
 		getnews()
 	}, [update])
 	return (
-		<div className='Eight-section_container slider-block'>
+		<div className='Eight-section_container slider-block' id='tree'>
 			<h1 className='slider-block-title'>Новости</h1>
 			<Swiper
 				spaceBetween={40}

@@ -8,7 +8,7 @@ import mail from "../image/mail.png";
 
 function FooterSection(){
     return(
-        <div className="footer-section">
+        <div className="footer-section" id="four">
             <div className="footer-section_left-block left-footer">
                 <h2 className="left-footer_title">Партнеры</h2>
                 <div className="left-footer_partners partner-block">

@@ -26,7 +26,7 @@ const FiveBlock = () => {
 
 	return (
 		<>
-			<div className='FiveBlock'>
+			<div className='FiveBlock' id='one'>
 				<div className='FiveBlock__main'>
 					<h5>Образовательные программы</h5>
 					<div className='FiveBlock__main-grid'>

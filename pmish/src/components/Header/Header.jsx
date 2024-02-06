@@ -7,6 +7,16 @@ const Header = () => {
 		const clickHandler = (e) => {
 			e.preventDefault();
 			setActive(!active)
+			if(active === false){
+				document.body.style.overflow = "hidden"
+			}else{
+				document.body.style.overflow = "scroll"
+			}
+		};
+		const closeBurger = (e) => {
+			setActive(!active)
+			document.body.style.overflow = "scroll"
+			document.body.style.overflowX = "hidden"
 		};
 	return (
 		<>
@@ -22,10 +32,10 @@ const Header = () => {
 				</a>
 				<nav className={`Header__navblock ${active ? 'active' : ""}`}>
 					<ul>
-						<li className={`burger_li ${active ? 'active' : ""}`}>Образование</li>
-						<li className={`burger_li ${active ? 'active' : ""}`}>Наука</li>
-						<li className={`burger_li ${active ? 'active' : ""}`}>Новости</li>
-						<li className={`burger_li ${active ? 'active' : ""}`}>Контакты</li>
+						<a href='#one'  onClick={closeBurger} className={`burger_li ${active ? 'active' : ""}`}>Образование</a>
+						<a href='#two'  onClick={closeBurger} className={`burger_li ${active ? 'active' : ""}`}>Наука</a>
+						<a href='#tree' onClick={closeBurger} className={`burger_li ${active ? 'active' : ""}`}>Новости</a>
+						<a href='#four' onClick={closeBurger} className={`burger_li ${active ? 'active' : ""}`}>Контакты</a>
 					</ul>
 				</nav>
 			</header>
